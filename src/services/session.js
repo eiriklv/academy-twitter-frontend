@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3333';
+const API_URL = process.env.REACT_APP_API_URL;
 
 export async function createSession({ handle, password }) {
   await new Promise((resolve) => {
