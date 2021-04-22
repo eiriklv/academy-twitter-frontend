@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+[![Codeship Status for eiriklv/academy-twitter-frontend](https://app.codeship.com/projects/c486b040-9719-4a5f-87f2-a72a1df57e13/status?branch=master)](https://app.codeship.com/projects/442615)
+
 ## Available Scripts
 
 In the project directory, you can run:
