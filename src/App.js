@@ -7,6 +7,7 @@ import Login from './components/Login';
 import Feed from './components/Feed';
 import Logout from './components/Logout';
 import Signup from './components/Signup';
+import UserFeed from './components/UserFeed';
 
 import withAuthentication from './hocs/with-authentication';
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/login" component={Login} />
         <Route path="/logout" component={Logout} />
         <Route path="/signup" component={Signup} />
+        <Route path="/user/:handle" component={UserFeed} />
       </Switch>
     </HashRouter>
   );

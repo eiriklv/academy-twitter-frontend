@@ -5,6 +5,11 @@ export function getTweets() {
   .then((res) => res.json());
 }
 
+export function getTweetsByHandle(handle) {
+  return fetch(`${API_URL}/tweets/${handle}`)
+  .then((res) => res.json());
+}
+
 export function postTweet(message) {
   return fetch(`${API_URL}/tweets`, {
     method: 'POST',

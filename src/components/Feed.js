@@ -100,9 +100,15 @@ class Feed extends React.Component {
         { addSuffix: true }
       );
 
+      const userLink = (
+        <Link to={`/user/${handle}`}>
+          @{handle}
+        </Link>
+      );
+
       return (
         <div key={id} style={styles}>
-          <p>{name} (@{handle}) - {timeAgo}</p>
+          <p>{name} ({userLink}) - {timeAgo}</p>
           <p>{message}</p>
         </div>
       );
