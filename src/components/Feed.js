@@ -20,11 +20,13 @@ class Feed extends React.Component {
       
     }
 
+    const prefilledText = window.location.search.split('?text=')[1];
+
     this.state = {
       tweets: [],
       isLoading: false,
       error: null,
-      message: '',
+      message: prefilledText || '',
       session: payload,
     }
   }
